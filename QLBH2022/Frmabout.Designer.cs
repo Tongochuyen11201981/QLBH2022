@@ -42,6 +42,7 @@
             this.label1.Size = new System.Drawing.Size(777, 55);
             this.label1.TabIndex = 0;
             this.label1.Text = "Dự án phần mềm quản lý bán hàng";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -55,11 +56,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Frmabout";
             this.Text = "Giới thiệu dự án";
+            this.Load += new System.EventHandler(this.Frmabout_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
